@@ -27,3 +27,43 @@ public class MyEndpoint{
     }
 }
 ```
+
+Maven:
+
+```xml
+<project>
+   ...
+   <repositories>
+        <repository>
+            <id>tomee-boot-repo</id>
+            <name>TomEE boot</name>
+            <url>http://dl.bintray.com/gabfssilva/maven</url>
+        </repository>
+    </repositories>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.tomeeboot</groupId>
+            <artifactId>tomee-boot</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+    </dependencies>
+    ...
+</project>
+```
+
+Gradle:
+
+```groovy
+repositories {
+    ...
+
+    maven{
+        url 'http://dl.bintray.com/gabfssilva/maven'
+    }
+}
+
+dependencies {
+    compile 'org.tomeeboot:tomee-boot:1.0.0'
+}
+```
