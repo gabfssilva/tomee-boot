@@ -2,13 +2,24 @@ apply plugin: 'java'
 apply plugin: 'maven'
 
 sourceCompatibility = 1.6
-version = '1.0.0-SNAPSHOT'
 group = 'org.tomeeboot'
 
 repositories {
     mavenCentral()
     mavenLocal()
+    jcenter()
 }
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'net.researchgate:gradle-release:2.0.2'
+    }
+}
+
+apply plugin: 'net.researchgate.release'
 
 dependencies {
     compile 'org.apache.openejb:tomee-embedded:1.7.1'
