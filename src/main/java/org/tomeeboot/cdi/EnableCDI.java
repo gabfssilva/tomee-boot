@@ -1,4 +1,4 @@
-package org.tomeeboot;
+package org.tomeeboot.cdi;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

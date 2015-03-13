@@ -10,7 +10,7 @@ repositories {
     jcenter()
 
     maven{
-        url: 'http://dl.bintray.com/gabfssilva/maven/'
+        url 'http://dl.bintray.com/gabfssilva/maven/'
     }
 }
 
