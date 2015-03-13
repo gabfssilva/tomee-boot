@@ -111,7 +111,7 @@ http://tomee.apache.org/datasource-config.html
         <dependency>
             <groupId>org.tomeeboot</groupId>
             <artifactId>tomee-boot</artifactId>
-            <version>1.0.0</version>
+            <version>1.1.0</version>
         </dependency>
     </dependencies>
     ...
@@ -130,6 +130,6 @@ repositories {
 }
 
 dependencies {
-    compile 'org.tomeeboot:tomee-boot:1.0.0'
+    compile 'org.tomeeboot:tomee-boot:1.1.0'
 }
 ```
